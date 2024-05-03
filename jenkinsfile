@@ -24,7 +24,7 @@ sh 'zip -r retailproject.zip .'
 stage('Deploy') {
 steps {
 sh 'sshpass -p $LABS_PSW scp -o StrictHostKeyChecking=no -r .
-$LABS_USR@g02.itversity.com:/home/itv005857/retailproject'
+$LABS_USR@g02.itversity.com:/home/itv011797/retailproject'
 }
 }
 }
